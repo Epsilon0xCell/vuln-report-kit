@@ -20,10 +20,11 @@ statements that reviewers actually reject reports for missing:
   fix                   a suggested fix or mitigation
 
 Usage:
-  python3 vuln_report_check.py REPORT [--strict]
+  python3 vuln_report_check.py REPORT
+  python3 vuln_report_check.py --help
 
-Exit code is 0 when every required check passes, 1 otherwise.
-With --strict, warnings also fail the run.
+Exit code is 0 when every required check passes, 1 otherwise, and 2 for
+a usage error or an unreadable file. Unknown options are a usage error.
 
 The validator checks for the presence and shape of content. It cannot check
 that the content is true. That part is still yours.
@@ -131,10 +132,15 @@ def check(text):
 
 
 def main(argv):
+    if any(a in ("-h", "--help") for a in argv[1:]):
+        print(__doc__.strip())
+        return 0
+    unknown = [a for a in argv[1:] if a.startswith("--")]
     args = [a for a in argv[1:] if not a.startswith("--")]
-    strict = "--strict" in argv
-    if len(args) != 1:
-        print("usage: vuln_report_check.py REPORT [--strict]", file=sys.stderr)
+    if unknown:
+        print(f"unknown option: {unknown[0]}", file=sys.stderr)
+    if unknown or len(args) != 1:
+        print("usage: vuln_report_check.py REPORT", file=sys.stderr)
         return 2
     try:
         text = open(args[0], encoding="utf-8", errors="ignore").read()

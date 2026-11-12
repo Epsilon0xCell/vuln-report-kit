@@ -49,6 +49,7 @@ And the sample that passes, `samples/good-report.md`, scores 11/11. Read the two
 
 | Check | The rejection it prevents |
 |---|---|
+| Title line | A report nobody can identify in a tracker list from its heading alone. |
 | Boundary statement, sourced from the project's own docs | "This is documented, intended behaviour." The most expensive rejection there is, and the cheapest to prevent. |
 | Affected versions, concretely named | "Which versions? All of them?" with the range never established. |
 | Reproduction with a runnable artifact | A prose claim nobody can re-run, closed as unreproducible. |

@@ -1,5 +1,7 @@
 # vuln-report-kit
 
+[![Release](https://img.shields.io/github/v/release/Epsilon0xCell/vuln-report-kit)](https://github.com/Epsilon0xCell/vuln-report-kit/releases) [![License](https://img.shields.io/github/license/Epsilon0xCell/vuln-report-kit)](LICENSE) [![Stars](https://img.shields.io/github/stars/Epsilon0xCell/vuln-report-kit)](https://github.com/Epsilon0xCell/vuln-report-kit/stargazers)
+
 ![Reports that survive review: every section a reviewer checks for, checked before you send.](assets/banner.svg)
 
 **Maintainers do not reject reports for weak findings nearly as often as they reject them for missing sections: no boundary statement, no control, no dedup note, a severity with no visible basis. This kit checks for all of that before the report leaves your machine.**
@@ -33,6 +35,15 @@ RESULT: FAIL - fix the FAIL lines before this report goes anywhere
 ```
 
 And the sample that passes, `samples/good-report.md`, scores 11/11. Read the two samples side by side; the contrast is the documentation.
+
+## Contents
+
+- [Install and run](#install-and-run)
+- [What it checks](#what-it-checks)
+- [The templates](#the-templates)
+- [Honest limits](#honest-limits)
+- [Tests](#tests)
+- [License](#license)
 
 ## What it checks
 

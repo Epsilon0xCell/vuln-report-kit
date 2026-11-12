@@ -1,0 +1,20 @@
+Subject: <Product> <version>: <the problem in one line>
+
+Hello,
+
+I am writing to report a security issue in <product>, tested on version
+<version>. <One sentence on the flaw.> <One sentence on the demonstrated
+impact, stated as what an attacker gains.>
+
+The full report is attached (or: in the private advisory I have opened). It
+includes a reproduction with its control, an anchor comparison against
+<fixed or unaffected version>, and a suggested fix. I searched <the advisory
+database, the issue tracker, and the changelog> before writing; the nearest
+existing report is <none / ID, and how this differs>.
+
+I am happy to verify a fix against the same reproduction, or to adjust the
+report if I have misunderstood the intended behaviour. My preferred credit
+name is <name>.
+
+Thank you for maintaining <product>,
+<Your name>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+<rect width="1200" height="300" fill="#0d1117"/>
+<text x="60" y="120" font-family="monospace" font-size="52" fill="#58a6ff">vuln-report-kit</text>
+<text x="60" y="180" font-family="monospace" font-size="28" fill="#c9d1d9">Reports that survive review: every section a reviewer checks for, checked before you send.</text>
+<text x="60" y="240" font-family="monospace" font-size="22" fill="#8b949e">Templates plus a completeness validator for vulnerability reports.</text>
+</svg>
